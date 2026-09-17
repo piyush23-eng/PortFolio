@@ -15,41 +15,41 @@ export const ContactCTA: React.FC = () => {
   return (
     <section
       id="contact"
-      className="relative w-full py-24 md:py-36 px-6 sm:px-12 md:px-16 border-t border-black/[0.08] bg-[#fafafa] overflow-hidden select-none"
+      className="relative w-full py-20 sm:py-24 md:py-36 px-4 sm:px-12 md:px-16 border-t border-black/[0.08] bg-[#fafafa] overflow-hidden select-none"
     >
-      <div className="max-w-7xl mx-auto space-y-14">
+      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-14">
         {/* Label */}
-        <div className="flex items-center gap-3 font-mono-tech text-xs tracking-widest text-[#8492a6] uppercase">
+        <div className="flex items-center gap-3 font-mono-tech text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-[#8492a6] uppercase">
           <span className="text-[#2563eb] font-bold">[ 09 ]</span>
           <span>GET IN TOUCH // CONTACT &amp; INQUIRIES</span>
         </div>
 
         {/* Monolithic Editorial Typography CTA - Clamped to prevent viewport overflow */}
-        <div className="w-full max-w-full overflow-hidden space-y-1 sm:space-y-2">
-          <h2 className="font-display text-[7.8vw] sm:text-[7.2vw] md:text-[5.6vw] lg:text-[5.2rem] xl:text-[6.4rem] font-black tracking-tighter leading-[0.9] text-[#0a0a0c] uppercase">
+        <div className="w-full max-w-full overflow-hidden space-y-1 sm:space-y-2 py-1">
+          <h2 className="font-display text-[6.8vw] xs:text-[7.2vw] sm:text-[7.2vw] md:text-[5.6vw] lg:text-[5.2rem] xl:text-[6.4rem] font-black tracking-tight leading-[0.95] text-[#0a0a0c] uppercase break-words">
             LET'S BUILD
           </h2>
-          <h2 className="font-display text-[7.8vw] sm:text-[7.2vw] md:text-[5.6vw] lg:text-[5.2rem] xl:text-[6.4rem] font-black tracking-tighter leading-[0.9] text-[#2563eb] uppercase">
+          <h2 className="font-display text-[6.8vw] xs:text-[7.2vw] sm:text-[7.2vw] md:text-[5.6vw] lg:text-[5.2rem] xl:text-[6.4rem] font-black tracking-tight leading-[0.95] text-[#2563eb] uppercase break-words">
             SOMETHING
           </h2>
-          <h2 className="font-display text-[7.8vw] sm:text-[7.2vw] md:text-[5.6vw] lg:text-[5.2rem] xl:text-[6.4rem] font-black tracking-tighter leading-[0.9] text-[#0a0a0c] uppercase">
+          <h2 className="font-display text-[6.8vw] xs:text-[7.2vw] sm:text-[7.2vw] md:text-[5.6vw] lg:text-[5.2rem] xl:text-[6.4rem] font-black tracking-tight leading-[0.95] text-[#0a0a0c] uppercase break-words">
             INTERESTING.
           </h2>
         </div>
 
         {/* Actions & Direct Contact Details */}
-        <div className="pt-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 border-t border-black/[0.08]">
-          <div className="space-y-4">
-            <div className="font-mono-tech text-xs uppercase tracking-wider text-[#8492a6]">
+        <div className="pt-8 sm:pt-10 flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 sm:gap-10 border-t border-black/[0.08]">
+          <div className="space-y-4 w-full lg:w-auto">
+            <div className="font-mono-tech text-[11px] sm:text-xs uppercase tracking-wider text-[#8492a6]">
               Direct Inquiries For Software &amp; AI Engineering
             </div>
 
-            <div className="flex flex-wrap items-center gap-4 font-mono-tech text-xs">
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 sm:gap-4 font-mono-tech text-xs w-full">
               {/* Primary Email CTA */}
               <MagneticButton
                 href={`mailto:${PERSONAL.email}?subject=Excited%20to%20connect%20with%20Piyush%20Pankaj`}
                 cursorMode="cta"
-                className="px-8 py-4 rounded-full bg-[#0a0a0c] text-white font-bold tracking-wider flex items-center gap-2.5 hover:bg-[#2563eb] transition-all shadow-md"
+                className="w-full sm:w-auto justify-center px-8 py-4 rounded-full bg-[#0a0a0c] text-white font-bold tracking-wider flex items-center gap-2.5 hover:bg-[#2563eb] transition-all shadow-md"
               >
                 <span>GET IN TOUCH</span>
                 <Send className="w-3.5 h-3.5" />
@@ -59,19 +59,19 @@ export const ContactCTA: React.FC = () => {
               <button
                 type="button"
                 onClick={handleCopyEmail}
-                className="px-6 py-4 rounded-full border border-black/[0.1] bg-white hover:bg-black/[0.03] text-[#0a0a0c] flex items-center gap-2 transition-all active:scale-95 shadow-2xs font-medium"
+                className="w-full sm:w-auto justify-center px-5 sm:px-6 py-4 rounded-full border border-black/[0.1] bg-white hover:bg-black/[0.03] text-[#0a0a0c] flex items-center gap-2 transition-all active:scale-95 shadow-2xs font-medium text-[11px] sm:text-xs"
                 data-cursor="hover"
               >
                 {copied ? (
                   <>
-                    <Check className="w-4 h-4 text-emerald-600" />
+                    <Check className="w-4 h-4 text-emerald-600 shrink-0" />
                     <span className="text-emerald-600 font-semibold">COPIED TO CLIPBOARD</span>
                   </>
                 ) : (
                   <>
-                    <Mail className="w-4 h-4 text-[#2563eb]" />
-                    <span>{PERSONAL.email}</span>
-                    <Copy className="w-3.5 h-3.5 text-[#8492a6] ml-1" />
+                    <Mail className="w-4 h-4 text-[#2563eb] shrink-0" />
+                    <span className="truncate">{PERSONAL.email}</span>
+                    <Copy className="w-3.5 h-3.5 text-[#8492a6] ml-1 shrink-0" />
                   </>
                 )}
               </button>

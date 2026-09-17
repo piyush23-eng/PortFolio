@@ -58,11 +58,11 @@ export const PersonalPhilosophy: React.FC = () => {
     <section
       id="about"
       ref={sectionRef}
-      className="relative w-full py-28 md:py-40 px-6 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#f5f5f7]"
+      className="relative w-full py-20 sm:py-28 md:py-40 px-4 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#f5f5f7]"
     >
-      <div className="max-w-7xl mx-auto space-y-16">
+      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
         {/* Tag */}
-        <div className="flex items-center gap-3 font-mono-tech text-xs tracking-widest text-[#8492a6] uppercase">
+        <div className="flex items-center gap-3 font-mono-tech text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-[#8492a6] uppercase">
           <span className="text-[#2563eb] font-bold">[ 08 ]</span>
           <span>ENGINEERING PRINCIPLES &amp; BACKGROUND</span>
         </div>
@@ -71,14 +71,14 @@ export const PersonalPhilosophy: React.FC = () => {
         <div className="max-w-4xl">
           <h3
             ref={quoteRef}
-            className="font-display text-4xl sm:text-6xl md:text-7xl font-extrabold text-[#0a0a0c] tracking-tight leading-[1.08]"
+            className="font-display text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0a0a0c] tracking-tight leading-[1.15] break-words"
           >
             "{PERSONAL.aboutQuote}"
           </h3>
         </div>
 
         {/* Editorial Split: Portrait & Narrative */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start pt-6 border-t border-black/[0.08]">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start pt-6 border-t border-black/[0.08]">
           {/* Black & White Editorial Portrait */}
           <div ref={imageRef} className="lg:col-span-5 relative group">
             <div

@@ -16,17 +16,17 @@ export const EngineeringStack: React.FC = () => {
   return (
     <section
       id="stack"
-      className="relative w-full py-28 md:py-36 border-t border-black/[0.06] bg-[#fafafa] overflow-hidden"
+      className="relative w-full py-20 sm:py-28 md:py-36 border-t border-black/[0.06] bg-[#fafafa] overflow-hidden"
     >
-      <div className="max-w-7xl mx-auto px-6 sm:px-12 md:px-16 space-y-14">
+      <div className="max-w-7xl mx-auto px-4 sm:px-12 md:px-16 space-y-12 sm:space-y-14">
         {/* Section Header */}
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-8 border-b border-black/[0.08]">
-          <div className="space-y-3">
-            <div className="flex items-center gap-3 font-mono-tech text-xs tracking-widest text-[#8492a6] uppercase">
+        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 sm:pb-8 border-b border-black/[0.08]">
+          <div className="space-y-2.5 sm:space-y-3">
+            <div className="flex items-center gap-3 font-mono-tech text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-[#8492a6] uppercase">
               <span className="text-[#2563eb] font-bold">[ 06 ]</span>
               <span>CORE TECHNOLOGIES &amp; TOOLING</span>
             </div>
-            <h2 className="font-display text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-[#0a0a0c]">
+            <h2 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#0a0a0c]">
               ENGINEERING STACK
             </h2>
             <p className="font-mono-tech text-xs sm:text-sm text-[#475569] max-w-xl">

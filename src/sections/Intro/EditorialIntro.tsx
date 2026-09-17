@@ -72,11 +72,11 @@ export const EditorialIntro: React.FC = () => {
     <section
       id="intro"
       ref={sectionRef}
-      className="relative w-full py-28 md:py-44 px-6 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#fafafa]"
+      className="relative w-full py-20 sm:py-28 md:py-44 px-4 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#fafafa]"
     >
-      <div className="max-w-7xl mx-auto space-y-16">
+      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
         {/* Label */}
-        <div className="flex items-center gap-3 font-mono-tech text-xs tracking-widest text-[#8492a6] uppercase">
+        <div className="flex items-center gap-3 font-mono-tech text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-[#8492a6] uppercase">
           <span className="text-[#2563eb] font-bold">[ 02 ]</span>
           <span>ENGINEERING PHILOSOPHY &amp; CORE FOCUS</span>
         </div>
@@ -85,7 +85,7 @@ export const EditorialIntro: React.FC = () => {
         <div className="overflow-hidden">
           <h2
             ref={headlineRef}
-            className="font-display text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tight text-[#0a0a0c] max-w-5xl leading-[1.04]"
+            className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tight text-[#0a0a0c] max-w-5xl leading-[1.08] break-words"
           >
             I build systems that move from{' '}
             <span className="text-[#2563eb] underline decoration-black/[0.1] decoration-wavy">
@@ -95,11 +95,11 @@ export const EditorialIntro: React.FC = () => {
         </div>
 
         {/* Paragraph & Meta Columns */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start pt-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start pt-4 sm:pt-6">
           <div className="lg:col-span-8">
             <p
               ref={paragraphRef}
-              className="text-xl sm:text-2xl md:text-3xl font-light text-[#475569] leading-relaxed"
+              className="text-lg sm:text-2xl md:text-3xl font-light text-[#475569] leading-relaxed"
             >
               {PERSONAL.introParagraph}
             </p>

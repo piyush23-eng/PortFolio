@@ -39,20 +39,20 @@ export const SelectedWork: React.FC = () => {
     <section
       id="work"
       ref={sectionRef}
-      className="relative w-full py-28 md:py-36 px-6 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#fafafa]"
+      className="relative w-full py-20 sm:py-28 md:py-36 px-4 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#fafafa]"
     >
-      <div className="max-w-7xl mx-auto space-y-16">
+      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16">
         {/* Section Header */}
         <div
           ref={headerRef}
-          className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-black/[0.08]"
+          className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 sm:pb-8 border-b border-black/[0.08]"
         >
           <div>
-            <div className="flex items-center gap-3 font-mono-tech text-xs tracking-widest text-[#8492a6] mb-3 uppercase">
+            <div className="flex items-center gap-3 font-mono-tech text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-[#8492a6] mb-2.5 sm:mb-3 uppercase">
               <span className="text-[#2563eb] font-bold">[ 03 ]</span>
               <span>FEATURED ENGINEERING PROJECTS</span>
             </div>
-            <h2 className="font-display text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-[#0a0a0c]">
+            <h2 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#0a0a0c]">
               SELECTED WORK
             </h2>
           </div>

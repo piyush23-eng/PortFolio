@@ -5,12 +5,12 @@ import { Award, GraduationCap } from 'lucide-react';
 export const EducationAchievements: React.FC = () => {
   return (
     <section
-      className="relative w-full py-28 md:py-36 px-6 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#fafafa]"
+      className="relative w-full py-20 sm:py-28 md:py-36 px-4 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#fafafa]"
     >
-      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-20 items-start">
         {/* Left Column: Minimal Academic Foundation */}
         <div className="lg:col-span-6 space-y-6">
-          <div className="flex items-center gap-3 font-mono-tech text-xs tracking-widest text-[#8492a6] uppercase">
+          <div className="flex items-center gap-3 font-mono-tech text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-[#8492a6] uppercase">
             <span className="text-[#2563eb] font-bold">[ 07 ]</span>
             <span>ACADEMIC FOUNDATION</span>
           </div>
@@ -19,7 +19,7 @@ export const EducationAchievements: React.FC = () => {
             <span className="font-mono-tech text-xs text-[#2563eb] font-bold tracking-widest block uppercase mb-1">
               UNDERGRADUATE DEGREE
             </span>
-            <h3 className="font-display text-3xl sm:text-5xl font-extrabold text-[#0a0a0c] tracking-tight leading-tight">
+            <h3 className="font-display text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#0a0a0c] tracking-tight leading-tight">
               B.Tech in Computer Science &amp; Engineering
             </h3>
           </div>

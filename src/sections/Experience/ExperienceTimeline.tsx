@@ -62,17 +62,17 @@ export const ExperienceTimeline: React.FC = () => {
     <section
       id="experience"
       ref={sectionRef}
-      className="relative w-full py-28 md:py-40 px-6 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#fafafa]"
+      className="relative w-full py-20 sm:py-28 md:py-40 px-4 sm:px-12 md:px-16 border-t border-black/[0.06] bg-[#fafafa]"
     >
-      <div className="max-w-7xl mx-auto space-y-20">
+      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-20">
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-8 border-b border-black/[0.08]">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 pb-6 sm:pb-8 border-b border-black/[0.08]">
           <div>
-            <div className="flex items-center gap-3 font-mono-tech text-xs tracking-widest text-[#8492a6] mb-3 uppercase">
+            <div className="flex items-center gap-3 font-mono-tech text-[11px] sm:text-xs tracking-wider sm:tracking-widest text-[#8492a6] mb-2.5 sm:mb-3 uppercase">
               <span className="text-[#2563eb] font-bold">[ 05 ]</span>
               <span>WORK EXPERIENCE &amp; INTERNSHIPS</span>
             </div>
-            <h2 className="font-display text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-[#0a0a0c]">
+            <h2 className="font-display text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-[#0a0a0c]">
               EXPERIENCE
             </h2>
           </div>
@@ -90,15 +90,15 @@ export const ExperienceTimeline: React.FC = () => {
             className="absolute left-0 top-3 bottom-0 w-[2px] bg-gradient-to-b from-[#2563eb] via-black/20 to-transparent origin-top will-change-transform"
           />
 
-          <div className="space-y-20 sm:space-y-28">
+          <div className="space-y-14 sm:space-y-28">
             {EXPERIENCES.map((exp, idx) => (
               <div
                 key={exp.id}
                 ref={(el) => (itemsRef.current[idx] = el)}
-                className="relative group space-y-6"
+                className="relative group space-y-5 sm:space-y-6"
               >
                 {/* Dot */}
-                <div className="absolute -left-[31px] sm:-left-[55px] md:-left-[71px] top-1.5 w-4 h-4 rounded-full bg-white border-2 border-[#2563eb] group-hover:scale-125 transition-transform shadow-xs" />
+                <div className="absolute -left-[31px] sm:-left-[55px] md:-left-[71px] top-1.5 w-3.5 h-3.5 sm:w-4 sm:h-4 rounded-full bg-white border-2 border-[#2563eb] group-hover:scale-125 transition-transform shadow-xs" />
 
                 {/* Period & Badge */}
                 <div className="flex flex-wrap items-center justify-between gap-3 font-mono-tech text-xs">

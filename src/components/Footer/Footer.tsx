@@ -29,10 +29,10 @@ export const Footer: React.FC<FooterProps> = ({ onScrollToTop }) => {
   }, []);
 
   return (
-    <footer className="w-full border-t border-black/[0.08] bg-[#f5f5f7] py-12 px-6 sm:px-12 md:px-16 font-mono-tech text-xs text-[#8492a6]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+    <footer className="w-full border-t border-black/[0.08] bg-[#f5f5f7] py-10 sm:py-12 px-4 sm:px-12 md:px-16 font-mono-tech text-[11px] sm:text-xs text-[#8492a6]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-5 sm:gap-6">
         {/* Brand & Local Time */}
-        <div className="flex flex-col sm:flex-row items-center gap-4 text-center sm:text-left">
+        <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
           <span className="text-[#0a0a0c] font-bold tracking-wider uppercase">
             {PERSONAL.name} © 2026
           </span>

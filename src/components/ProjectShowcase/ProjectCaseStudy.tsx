@@ -25,7 +25,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project }) =
             <span>CASE STUDY // {project.year}</span>
           </div>
 
-          <h3 className="font-display text-4xl sm:text-6xl font-extrabold tracking-tight text-[#0a0a0c]">
+          <h3 className="font-display text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-[#0a0a0c] break-words">
             {project.title}
           </h3>
 
@@ -33,12 +33,12 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project }) =
             {project.subtitle}
           </p>
 
-          <p className="text-base text-[#475569] leading-relaxed font-light">
+          <p className="text-sm sm:text-base text-[#475569] leading-relaxed font-light">
             "{project.description}"
           </p>
 
           {/* Quick Technical Architecture Badges */}
-          <div className="flex flex-wrap gap-2 pt-2">
+          <div className="flex flex-wrap gap-1.5 sm:gap-2 pt-2">
             {project.technologies.slice(0, 7).map((tech) => (
               <span
                 key={tech}
@@ -55,13 +55,13 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project }) =
           </div>
 
           {/* CTA Action Buttons */}
-          <div className="pt-4 flex flex-wrap items-center gap-3 font-mono-tech text-xs">
+          <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3 font-mono-tech text-xs">
             <MagneticButton
               href={project.liveUrl}
               target="_blank"
               rel="noopener noreferrer"
               cursorMode="open"
-              className="px-6 py-3 rounded-full bg-[#2563eb] text-white font-semibold flex items-center gap-2 hover:bg-[#0a0a0c] transition-colors shadow-sm"
+              className="w-full sm:w-auto justify-center px-6 py-3 rounded-full bg-[#2563eb] text-white font-semibold flex items-center gap-2 hover:bg-[#0a0a0c] transition-colors shadow-sm"
             >
               <span>LIVE DEMO</span>
               <ExternalLink className="w-3.5 h-3.5" />
@@ -72,7 +72,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({ project }) =
               target="_blank"
               rel="noopener noreferrer"
               cursorMode="hover"
-              className="px-6 py-3 rounded-full border border-black/[0.12] bg-white text-[#0a0a0c] font-medium flex items-center gap-2 hover:bg-black/[0.04] transition-colors"
+              className="w-full sm:w-auto justify-center px-6 py-3 rounded-full border border-black/[0.12] bg-white text-[#0a0a0c] font-medium flex items-center gap-2 hover:bg-black/[0.04] transition-colors"
             >
               <span>GITHUB</span>
               <Github className="w-3.5 h-3.5" />

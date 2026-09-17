@@ -40,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             : 'py-6 bg-transparent border-b border-transparent'
         }`}
       >
-        <div className="max-w-7xl mx-auto px-6 sm:px-12 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-12 flex items-center justify-between">
           {/* Brand Left */}
           <MagneticButton
             onClick={() => {
@@ -50,10 +50,10 @@ export const Navbar: React.FC<NavbarProps> = ({
               onNavigate('#hero');
             }}
             cursorMode="hover"
-            className="flex items-center gap-2.5 group"
+            className="flex items-center gap-2 group shrink-0"
           >
             <span className="w-2 h-2 rounded-full bg-[#2563eb] group-hover:scale-125 transition-transform" />
-            <span className="font-display font-extrabold text-sm tracking-wider text-[#0a0a0c] group-hover:text-[#2563eb] transition-colors uppercase">
+            <span className="font-display font-extrabold text-xs sm:text-sm tracking-wider text-[#0a0a0c] group-hover:text-[#2563eb] transition-colors uppercase">
               PIYUSH PANKAJ
             </span>
           </MagneticButton>
